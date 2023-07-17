@@ -1,0 +1,78 @@
+.row{
+	display: flex;
+}
+.left{
+	min-width: 70%;
+}
+.rigth{
+	margin-top: -240px;
+}
+
+@keyframes movebg-e {
+	from {
+		background-position:  -4056px 0;
+	}
+	to {
+			background-position: 4056px 0;
+		}
+}
+
+section.banks{
+	padding: 60 0 0 0;
+}
+
+section.banks #icon-ani {
+	margin-top: 1em;
+	filter: grayscale(1);
+	opacity: 0.5;
+	transition: 0.33s;
+	width: 100%;
+	overflow: hidden;
+}
+
+section.banks #icon-ani:hover{
+	filter: grayscale(0);
+	opacity: 1;
+}
+
+#icon-ani {
+	width: 100%;
+	overflow: hidden;
+}
+
+.icons-row.bg-e {
+	animation: movebg-e 150s linear infinite;
+}
+
+.fondoinicio{	
+	background: url(../public/images/fondoinicio.jpg) top center;
+}
+
+.respuesta {
+    display: none;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.pregunta{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hr-separador {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-inicio {
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+}
