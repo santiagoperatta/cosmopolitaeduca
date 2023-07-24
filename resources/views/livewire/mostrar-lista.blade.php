@@ -1,5 +1,4 @@
 <div>
-	<h1 class="mt-16 mb-4 text-center font-bold text-4xl text-blue-900 leading-tight">Busca y elegi tu mejor opcion</h1>
 	<livewire:filtrar-carreras/>
     <div class="py-12">
 		<div class="max-w-7xl mx-auto">
