@@ -4,10 +4,9 @@
     		Solicitar Información
 		</button>
 
-		<button type="submit" class="inline-flex items-center px-4 py-2 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 bg-green-500 hover:bg-green-400 w-full justify-center mt-4">
-    		Contactarnos por WhatsApp
-			<a href="https://api.whatsapp.com/send?phone=+5493564500874&amp;text=Hola,%20me%20gustaría%20solicitar%20información%20de%20APLICACIÓN%20DE%20CIFRADO%20AMERICANO%20A%20ACOMPAÑAMIENTO%20EN%20EL%20PIANO" class="float" target="_blank"></a>
-		</button>
+		<div class="mt-4 text-center text-sm text-green-600 space-y-1">
+			{{session('mensaje')}}
+		</div>
 	</form>
 </div>
 
