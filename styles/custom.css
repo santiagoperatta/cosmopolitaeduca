@@ -1,3 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .row{
 	display: flex;
 }
@@ -46,6 +54,10 @@ section.banks #icon-ani:hover{
 
 .fondoinicio{	
 	background: url(../public/images/fondoinicio.jpg) top center;
+}
+
+.fondobanner{	
+	background: url(../public/images/fondobanner.jpg) top center;
 }
 
 .respuesta {

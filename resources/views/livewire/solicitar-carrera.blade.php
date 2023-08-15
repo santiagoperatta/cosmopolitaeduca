@@ -1,6 +1,6 @@
-<div class="mt-1 flex flex-col justify-center items-center">
+<div class="my-6 flex flex-col justify-center items-center">
 	<form wire:submit.prevent="solicitar">
-		<button type="submit" class="inline-flex items-center px-4 py-2 bg-blue-900 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-700 focus:bg-gray-700 active:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition ease-in-out duration-150 w-full justify-center mt-4">
+		<button type="submit" class="border-2 border-gray-700 bg-white hover:bg-gray-100 transition-colors text-gray-700 text-sm font-bold px-10 py-2 rounded cursor-pointer uppercase w-full">
     		Solicitar Información
 		</button>
 

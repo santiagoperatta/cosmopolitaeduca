@@ -1,9 +1,9 @@
 <x-app-layout>
-    <div class="fondoinicio py-20 bg-gray-50 overflow-hidden lg:py-24">
+    <div class="fondoinicio py-20 overflow-hidden lg:py-24">
         <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="p-16 relative">
-                <h2 class="text-center text-4xl leading-8 font-extrabold tracking-tight text-white sm:text-6xl">Cosmopolita Educa,<br>Educación a Distancia</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-white">Una oferta educativa adaptada a cada persona. ¡Cursa desde donde quieras y cuando quieras!</p>
+                <h2 class="text-center text-4xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-6xl">Cosmopolita Educa,<br>Educación a Distancia</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-400">Una oferta educativa adaptada a cada persona ¡Cursa desde <span class="text-yellow-500">donde quieras</span> y <span class="text-yellow-500">cuando quieras!</span></p>
             </div>
 
 			<!--<div class="hidden lg:block md:block button-inicio">
@@ -19,33 +19,28 @@
         </div>
     </div>
 
+	<livewire:timeline/>
+
     <livewire:home-carreras/>
+
+	<div class="hidden md:block w-full p-20 mb-20 fondobanner" style="background-repeat: no-repeat;">
+		<div class="max-w-lg mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
+			<div class="flex">
+				<div class="w-2/5">
+	
+				</div>
+				<div class="w-3/5 pl-8">
+					<h2 class="hidden md:block text-4xl text-center leading-8 tracking-tight text-white">Una oferta educativa adaptada<br>a cada persona.</h2>
+					<p class="hidden md:block mt-4 text-xl text-center text-white">Sumérgete en una variedad de cursos y carreras diseñados y conducidos por expertos en el campo,<br>conviértete en un profesional.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<livewire:preguntas/>
 
-	<livewire:timeline/>
+	<livewire:instituciones/>
 
-    <div class="py-12">
-        <div>
-            <section class="banks">
-                <div id="icon-ani">
-                    <div class="icons-row position-absolute bg-e" style="
-                            bottom: 0px;
-                            left: 0px;
-                            width: 3938px;
-                            height: 78px;
-                            background-position: 0 0;
-                            background-repeat: repeat;
-                            background-image: url('images/gifcolor.png');
-                            background-size: 100%;
-                          ">
-                          &nbsp;
-                    </div>
-                    &nbsp;
-                </div>
-            </div>
-        </section>
-    </div>
 </x-app-layout>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
