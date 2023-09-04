@@ -7,11 +7,11 @@
             </div>
 
 			<!--<div class="hidden lg:block md:block button-inicio">
-				<a href="{{route ('lista.index')}}" class="w-full inline-flex items-center px-4 py-2 border border-transparent rounded-md font-bold text-xs text-blue uppercase tracking-widest bg-white hover:bg-gray-200 justify-center mt-4">
+				<a href="{{route ('lista.index')}}" class="w-full inline-flex items-center px-4 py-2 border border-transparent rounded-md font-bold text-xs text-yellow uppercase tracking-widest bg-white hover:bg-gray-200 justify-center mt-4">
 					Ver todos los cursos
 				</a>
 		
-				<a href="{{route('register')}}" class="w-full inline-flex items-center px-4 py-2 border border-transparent rounded-md font-bold text-xs text-blue uppercase tracking-widest bg-white hover:bg-gray-200 justify-center mt-4">
+				<a href="{{route('register')}}" class="w-full inline-flex items-center px-4 py-2 border border-transparent rounded-md font-bold text-xs text-yellow uppercase tracking-widest bg-white hover:bg-gray-200 justify-center mt-4">
 					Registrarme
 				</a>
 			</div>-->

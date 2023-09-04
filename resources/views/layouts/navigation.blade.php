@@ -46,7 +46,7 @@
             <div class="hidden sm:flex sm:items-center sm:ml-6">
                 @auth
                     @can('create', App\Models\Carrera::class)
-                        <a class="mr-2 w-7 h-7 bg-blue-600 hover:bg-blue-800 rounded-full flex flex-col justify-center items-center text-sm font-bold text-white" href="{{ route('notificaciones') }}">
+                        <a class="mr-2 w-7 h-7 bg-yellow-600 hover:bg-yellow-800 rounded-full flex flex-col justify-center items-center text-sm font-bold text-white" href="{{ route('notificaciones') }}">
                             {{ Auth::user()->unreadNotifications->count() }}
                         </a>
                     @endcan
@@ -111,7 +111,7 @@
         @auth
             @if (auth()->user()->rol === 2)
                 <div class="flex gap-2 items-center p-3">
-                    <a class="w-7 h-7 bg-indigo-600 hover:bg-indigo-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white" href="{{ route('notificaciones') }}">
+                    <a class="w-7 h-7 bg-yellow-600 hover:bg-yellow-800 rounded-full flex flex-col justify-center items-center text-sm font-extrabold text-white" href="{{ route('notificaciones') }}">
                         {{ Auth::user()->unreadNotifications->count() }}
                     </a>
                     <p class="text-base font-medium text-gray-600">

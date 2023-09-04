@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Schema\yellowprint;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('interesados', function (Blueprint $table) {
+        Schema::create('interesados', function (yellowprint $table) {
             $table->id();
 			$table->foreignId('user_id')->constrained()->onDelete('cascade');
 			$table->foreignId('carrera_id')->constrained()->onDelete('cascade');

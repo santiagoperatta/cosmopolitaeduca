@@ -22,7 +22,7 @@
 									</p>
 								</div>
 								<div class="mt-5 lg:mt-0">
-									<a href="{{route('interesados.index', $notificacion->data['id_carrera'])}}" class="p-3 bg-blue-800 text-sm font-bold text-white rounded-lg">
+									<a href="{{route('interesados.index', $notificacion->data['id_carrera'])}}" class="p-3 bg-yellow-800 text-sm font-bold text-white rounded-lg">
 										Ver Interesados
 									</a>
 								</div>
