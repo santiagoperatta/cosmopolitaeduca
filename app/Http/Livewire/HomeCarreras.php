@@ -31,9 +31,7 @@ class HomeCarreras extends Component
 		})
 		->when($this->grado, function($query){
 			$query->where('grado_id', $this->grado);
-		})
-		
-		->paginate(20);
+		});
 
         return view('livewire.home-carreras', [
 			'carreras' => $carreras
