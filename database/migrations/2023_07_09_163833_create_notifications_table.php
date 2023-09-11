@@ -1,8 +1,9 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\yellowprint;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Schema\yellowprint;
+use Illuminate\Database\Migrations\Migration;
 
 return new class extends Migration
 {
@@ -11,7 +12,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('notifications', function (yellowprint $table) {
+        Schema::create('notifications', function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('type');
             $table->morphs('notifiable');
