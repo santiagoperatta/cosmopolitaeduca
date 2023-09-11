@@ -42,8 +42,8 @@
         </div>
 
 		
-		<script src="{{ asset('js/app.js') }}"></script>
 		@livewireScripts
+		@stack('scripts')
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<a href="https://api.whatsapp.com/send?phone=+54 9 3564 68-0460&text=Hola, quiero comunicarme con Cosmopolita Educa" class="float" target="_blank">
@@ -114,5 +114,8 @@
 			  </div>
 			</div>
 		</footer>
+
+		<script src="{{ asset('js/app.js') }}"></script>
+		@livewireScripts
     </body>
 </html>
