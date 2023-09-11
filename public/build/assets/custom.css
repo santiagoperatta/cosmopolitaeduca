@@ -52,12 +52,12 @@ section.banks #icon-ani:hover{
 	animation: movebg-e 150s linear infinite;
 }
 
-.fondoinicio{	
-	background: url(../public/images/fondoinicio.jpg) top center;
+.fondoinicio {	
+	background: url('/images/fondoinicio.jpg') top center;
 }
 
-.fondobanner{	
-	background: url(../public/images/fondobanner.jpg) top center;
+.fondobanner {	
+	background: url('/images/fondobanner.jpg') top center;
 }
 
 .respuesta {
