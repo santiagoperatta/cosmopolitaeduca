@@ -15,8 +15,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-		<link rel="stylesheet" href="{{ asset('dist/custom.css') }}">
-		<link rel="stylesheet" href="{{ asset('dist/whatsapp.css') }}">
+		<link rel="stylesheet" href="{{ asset('build/assets/custom.css') }}">
+		<link rel="stylesheet" href="{{ asset('build/assets/whatsapp.css') }}">
 
 
 
