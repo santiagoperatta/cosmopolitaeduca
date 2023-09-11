@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
+		@stack('styles')
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
@@ -40,10 +40,6 @@
                 {{ $slot }}
             </main>
         </div>
-
-		
-		@livewireScripts
-		@stack('scripts')
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<a href="https://api.whatsapp.com/send?phone=+54 9 3564 68-0460&text=Hola, quiero comunicarme con Cosmopolita Educa" class="float" target="_blank">
@@ -114,8 +110,7 @@
 			  </div>
 			</div>
 		</footer>
-
-		<script src="{{ asset('js/app.js') }}"></script>
 		@livewireScripts
+		@stack('scripts')
     </body>
 </html>
