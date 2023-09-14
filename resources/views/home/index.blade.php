@@ -3,7 +3,7 @@
         <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="p-16 relative">
                 <h2 class="text-center text-4xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-6xl">Cosmopolita Educa,<br>Educación a Distancia</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500">Una oferta educativa adaptada a cada persona ¡Cursa desde <span class="text-yellow-600">donde quieras</span> y <span class="text-yellow-600">cuando quieras!</span></p>
+                <p class="mt-4 max-w-3xl mx-auto text-center text-xl font-semibold text-gray-500">Una oferta educativa adaptada a cada persona ¡Cursa desde <span class="text-yellow-600">donde quieras</span> y <span class="text-yellow-600">cuando quieras!</span></p>
             </div>
 
 			<!--<div class="hidden lg:block md:block button-inicio">
@@ -20,6 +20,8 @@
     </div>
 
 	<livewire:timeline/>
+
+	<livewire:galeria/>
 
     <livewire:home-carreras/>
 
@@ -49,6 +51,35 @@
         $('.pregunta').click(function() {
             $(this).next('.respuesta').slideToggle();
             $(this).toggleClass('active');
+        });
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: false, // Desactivar las flechas de navegación
+            dots: false,
+            center: true, // Mostrar imagen actual en el centro
+            items: 3, // Mostrar 3 imágenes a la vez en dispositivos de escritorio
+            responsive: {
+                0: {
+                    items: 1 // Mostrar 1 imagen en dispositivos móviles
+                },
+                768: {
+                    items: 3 // Mostrar 3 imágenes en tabletas y dispositivos de escritorio
+                }
+            },
+            autoplay: true, // Activar rotación automática
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true
+        });
+        
+        // Agregar efecto de zoom en la imagen centrada
+        $('.zoom').on('click', function() {
+            $(this).toggleClass('zoomed');
         });
     });
 </script>
