@@ -3,7 +3,7 @@
         <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl">
             <div class="p-16 relative">
                 <h2 class="text-center text-4xl leading-8 font-extrabold tracking-tight text-gray-700 sm:text-6xl">Cosmopolita Educa,<br>Educación a Distancia</h2>
-                <p class="mt-4 max-w-3xl mx-auto text-center text-xl font-semibold text-gray-500">Una oferta educativa adaptada a cada persona ¡Cursa desde <span class="text-yellow-600">donde quieras</span> y <span class="text-yellow-600">cuando quieras!</span></p>
+                <p class="mt-4 max-w-3xl mx-auto text-center  text-xl text-gray-600">Una oferta educativa adaptada a cada persona. <br>¡Cursa desde <span class="text-yellow-600 font-semibold">donde quieras</span> y <span class="text-yellow-600 font-semibold">cuando quieras!</span></p>
             </div>
 
 			<!--<div class="hidden lg:block md:block button-inicio">
@@ -20,8 +20,6 @@
     </div>
 
 	<livewire:timeline/>
-
-	<livewire:galeria/>
 
     <livewire:home-carreras/>
 
