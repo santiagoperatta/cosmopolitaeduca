@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ListaController;
 use App\Http\Controllers\CursoVController;
 use App\Http\Controllers\CarreraController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CarreraVController;
+use App\Http\Controllers\NosotrosController;
 use App\Http\Controllers\InteresadoController;
-use App\Http\Controllers\ListaController;
 use App\Http\Controllers\NotificacionController;
 
 /*
@@ -29,6 +30,7 @@ Route::get('/carreras/{carrera}/edit', [CarreraController::class, 'edit'])->midd
 Route::get('/carreras/{carrera}', [CarreraController::class, 'show'])->name('carreras.show');
 Route::get('/candidatos/{carrera}', [InteresadoController::class, 'index'])->name('interesados.index');
 Route::get('/cursos', [CursoVController::class, 'index'])->name('cursosv.index');
+Route::get('/nosotros', [NosotrosController::class, 'index'])->name('nosotros.index');
 Route::get('/carreras', [CarreraVController::class, 'index'])->name('carrerasv.index');
 Route::get('/listado', [ListaController::class, 'index'])->name('lista.index');
 

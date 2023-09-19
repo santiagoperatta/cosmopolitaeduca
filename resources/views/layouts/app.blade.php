@@ -53,11 +53,14 @@
 		<footer class="bg-white dark:bg-gray-900">
 			<div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
 				<div class="md:flex md:justify-between">
-				  <div class="mb-6 md:mb-0">
-                    <a href="{{ route('carreras.index') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
-                    </a>
-				  </div>
+					<div class="mb-6 md:mb-0 flex justify-between items-center">
+						<a href="{{ route('carreras.index') }}">
+							<x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
+						</a>
+						<div class="ml-4">
+							<img src="{{ asset('/images/logoFooter.png') }}" class="block h-20 w-auto fill-current text-gray-800" alt="Logo Footer">
+						</div>
+					</div>
 				  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
 					  <div>
 						  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Nosotros</h2>
