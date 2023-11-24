@@ -1,8 +1,8 @@
-<div class="py-16 p-4">
+<div class="p-4">
 	<h1 class="text-center font-bold text-4xl text-gray-700 leading-tight">Nuestras Ofertas Educativas</h1>
     <div class="py-16">
         <div class="max-w-7xl mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div class="sectionDos grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 @foreach ($carreras as $carrera)
                     <div class="shadow-lg bg-white rounded-2xl overflow-hidden">
                         <a href="{{ route('carreras.show', $carrera->id) }}">

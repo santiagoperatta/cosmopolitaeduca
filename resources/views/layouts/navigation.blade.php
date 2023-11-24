@@ -27,9 +27,6 @@
 				
 				@cannot('create', App\Models\Carrera::class)
 					<div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-						<x-nav-link :href="route('nosotros.index')" :active="request()->routeIs('nosotros.index')">
-							{{ __('Nosotros') }}
-						</x-nav-link>
 					
 						<x-nav-link :href="route('carrerasv.index')" :active="request()->routeIs('carrerasv.index')">
 							{{ __('Carreras') }}
@@ -41,6 +38,10 @@
 						
 						<x-nav-link :href="route('lista.index')" :active="request()->routeIs('lista.index')">
 							{{ __('Categorías') }}
+						</x-nav-link>
+
+						<x-nav-link :href="route('nosotros.index')" :active="request()->routeIs('nosotros.index')">
+							{{ __('Nosotros') }}
 						</x-nav-link>
 					</div>
 				@endcannot
@@ -150,10 +151,6 @@
                         @csrf
 						@cannot('create', App\Models\Carrera::class)
 
-							<x-responsive-nav-link :href="route('nosotros.index')" :active="request()->routeIs('nosotros.index')">
-								{{ __('Nosotros') }}
-							</x-responsive-nav-link>
-
 							<x-responsive-nav-link :href="route('carrerasv.index')" :active="request()->routeIs('carrerasv.index')">
 								{{ __('Carreras') }}
 							</x-responsive-nav-link>
@@ -164,6 +161,9 @@
 		
 							<x-responsive-nav-link :href="route('lista.index')" :active="request()->routeIs('lista.index')">
 								{{ __('Filtrar') }}
+							</x-responsive-nav-link>
+							<x-responsive-nav-link :href="route('nosotros.index')" :active="request()->routeIs('nosotros.index')">
+								{{ __('Nosotros') }}
 							</x-responsive-nav-link>
 						@endcannot
 

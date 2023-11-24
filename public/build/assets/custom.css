@@ -88,3 +88,51 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.sectionUno {
+    opacity: 0;
+    transform: translateY(-50px); /* Inicialmente, desplaza el elemento hacia arriba */
+    transition: opacity 1s, transform 1s; /* Agrega la propiedad transform a la transición */
+}
+
+
+.sectionUno.open {
+	opacity: 1;
+    transform: translateY(0); /* Al abrir, devuelve el elemento a su posición original en el eje Y */
+}
+
+
+.sectionDos {
+    opacity: 0;
+    transform: translateY(-50px); /* Inicialmente, desplaza el elemento hacia arriba */
+    transition: opacity 1.5s, transform 1.5s; /* Agrega la propiedad transform a la transición */
+}
+
+
+.sectionDos.open {
+    opacity: 1;
+    transform: translateY(0); /* Al abrir, devuelve el elemento a su posición original en el eje Y */
+}
+
+
+.sectionTres {
+    opacity: 0;
+    transform: translateY(-50px); /* Inicialmente, desplaza el elemento hacia arriba */
+    transition: opacity 1.5s, transform 1.5s; /* Agrega la propiedad transform a la transición */
+}
+
+.sectionTres.open {
+    opacity: 1;
+    transform: translateY(0); /* Al abrir, devuelve el elemento a su posición original en el eje Y */
+}
+
+.sectionCuatro {
+    opacity: 0;
+    transform: translateY(-50px); /* Inicialmente, desplaza el elemento hacia arriba */
+    transition: opacity 1.5s, transform 1.5s; /* Agrega la propiedad transform a la transición */
+}
+
+.sectionCuatro.open {
+    opacity: 1;
+    transform: translateY(0); /* Al abrir, devuelve el elemento a su posición original en el eje Y */
+}

@@ -1,4 +1,4 @@
-<div class="mb-8 py-20 p-4">
+<div class="sectionCuatro mb-8 py-20 p-4">
     <div class="py-6">
         <div class="max-w-6xl mx-auto">
             <div class="grid md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-5">
@@ -8,6 +8,7 @@
                     </div>
                 @endforeach
             </div>
+			
         </div>
 		
     </div>

@@ -21,7 +21,10 @@
 
 		<link rel="stylesheet" href="{{ asset('build/assets/custom.css') }}">
 		<link rel="stylesheet" href="{{ asset('build/assets/whatsapp.css') }}">
-
+		
+		<script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
+		<script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/ScrollMagic.js"></script>
+		<script src="https://unpkg.com/scrollmagic@2.0.8/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
 
 
 		@livewireStyles

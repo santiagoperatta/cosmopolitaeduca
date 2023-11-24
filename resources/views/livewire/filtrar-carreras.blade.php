@@ -13,13 +13,13 @@
                         id="termino"
                         type="text"
                         placeholder="Buscar por Término: ej. Psicología"
-                        class="rounded-md shadow-sm border-gray-300 w-full"
+                        class="p-2 rounded-md shadow-sm border-gray-300 w-full"
 						wire:model="termino"
 						/>
                 </div>
 
                 <div class="mb-5">
-                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">Categoría</label>
+                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">ÁREA DE INTERÉS</label>
                     <select wire:model="categoria" class="border-gray-300 p-2 w-full">
                         <option>--Seleccione--</option>
             
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="mb-5">
-                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">Titulo</label>
+                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">GRADO DE FORMACIÓN</label>
                     <select wire:model="grado" class="border-gray-300 p-2 w-full">
                         <option>-- Seleccione --</option>
                         @foreach ($grados as $grado)
