@@ -6,7 +6,7 @@
                 @foreach ($carreras as $carrera)
                     <div class="shadow-lg bg-white rounded-2xl overflow-hidden">
                         <a href="{{ route('carreras.show', $carrera->id) }}">
-							<img src="{{ asset('images/carreras/' . $carrera->imagen) }}" alt="Imagen del post {{ $carrera->titulo }}">
+							<img src="{{ asset('storage/carreras/' . $carrera->imagen) }}" alt="Imagen del post {{ $carrera->titulo }}">
                         </a>
                         <div class="p-5 bg-white border-b border-gray-200 md:flex md:justify-between">
                             <div class="mb-4 md:mb-0">

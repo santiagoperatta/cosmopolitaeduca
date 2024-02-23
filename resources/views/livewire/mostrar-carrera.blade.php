@@ -37,7 +37,7 @@
 		</div>
 
 		<div class="hidden lg:block md:block rigth shadow-xl bg-white mb-6 rounded-3xl h-full">
-			<img src="{{ asset('images/carreras/' . $carrera->imagen) }}" class="rounded-2xl" alt="Imagen del post {{ $carrera->titulo }}">
+			<img src="{{ asset('storage/carreras/' . $carrera->imagen) }}" class="rounded-2xl" alt="Imagen del post {{ $carrera->titulo }}">
 			<div class="p-4">
 				<p class="font-bold text-3xl text-gray-800 my-2">
 					{{$carrera->precio}}<span class="text-base font-normal"> ARS</span>
