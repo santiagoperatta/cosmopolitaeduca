@@ -5,14 +5,14 @@
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Nombre')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
+            <x-text-input id="name" class="block mt-1 w-full border border-gray-300" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
+            <x-text-input id="email" class="block mt-1 w-full border border-gray-300" type="email" name="email" :value="old('email')" required autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
@@ -22,7 +22,7 @@
 			<select
 				id="rol"
 				name="rol"
-				class="block font-medium text-sm text-gray-700 w-full"
+				class="block font-medium text-sm text-gray-700 w-full border border-gray-300 p-2 rounded-lg"
 			>
 				<option value="">--Seleccciona un rol--</option>
 				<option value="1">Alumno</option>
@@ -36,7 +36,7 @@
         <div class="mt-4">
             <x-input-label for="password" :value="__('Contraseña')" />
 
-            <x-text-input id="password" class="block mt-1 w-full"
+            <x-text-input id="password" class="block mt-1 w-full border border-gray-300"
                             type="password"
                             name="password"
                             required autocomplete="new-password" />
@@ -48,7 +48,7 @@
         <div class="mt-4">
             <x-input-label for="password_confirmation" :value="__('Confirmar Contraseña')" />
 
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
+            <x-text-input id="password_confirmation" class="block mt-1 w-full border border-gray-300"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
 
